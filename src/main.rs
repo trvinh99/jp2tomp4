@@ -13,7 +13,7 @@ async fn main() -> Result<()> {
     gst::init()?;
     
     let pipeline = gst::parse_launch(&format!(
-        "multifilesrc location=src/example%01d.jp2 is-live=true pattern=ball ! image/jp2,framerate=1/1 ! avdec_jpeg2000 ! videoconvert ! queue ! x264enc ! queue  ! mp4mux ! filesink location=image.mp4"
+        "multifilesrc location=src/example%01d.jp2 ! image/jp2,framerate=1/1 ! avdec_jpeg2000 ! videoconvert ! queue ! x264enc ! queue  ! mp4mux ! filesink location=image.mp4"
     ))?
     .downcast::<gst::Pipeline>()
     .expect("Expected a gst::Pipeline");
