@@ -18,5 +18,7 @@ async fn main() -> Result<()> {
     .downcast::<gst::Pipeline>()
     .expect("Expected a gst::Pipeline");
 
+    pipeline.set_state(gst::State::Playing)?;
+
     Ok(())
 }
