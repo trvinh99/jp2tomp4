@@ -1,0 +1,85 @@
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-apple-darwin")
+cargo:rerun-if-env-changed=CC_x86_64-apple-darwin
+CC_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_x86_64_apple_darwin
+CC_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
+CFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
+CFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2,sse3,ssse3")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/thread.o" "-c" "vendor/src/lib/openjp2/thread.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/bio.o" "-c" "vendor/src/lib/openjp2/bio.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/cio.o" "-c" "vendor/src/lib/openjp2/cio.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/dwt.o" "-c" "vendor/src/lib/openjp2/dwt.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/event.o" "-c" "vendor/src/lib/openjp2/event.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/ht_dec.o" "-c" "vendor/src/lib/openjp2/ht_dec.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/image.o" "-c" "vendor/src/lib/openjp2/image.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/invert.o" "-c" "vendor/src/lib/openjp2/invert.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/j2k.o" "-c" "vendor/src/lib/openjp2/j2k.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/jp2.o" "-c" "vendor/src/lib/openjp2/jp2.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/mct.o" "-c" "vendor/src/lib/openjp2/mct.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/mqc.o" "-c" "vendor/src/lib/openjp2/mqc.c"
+cargo:warning=vendor/src/lib/openjp2/mqc.c:373:20: warning: unused function 'opj_mqc_renorme' [-Wunused-function]
+cargo:warning=static INLINE void opj_mqc_renorme(opj_mqc_t *mqc)
+cargo:warning=                   ^
+cargo:warning=1 warning generated.
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/openjpeg.o" "-c" "vendor/src/lib/openjp2/openjpeg.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/opj_clock.o" "-c" "vendor/src/lib/openjp2/opj_clock.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/pi.o" "-c" "vendor/src/lib/openjp2/pi.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/t1.o" "-c" "vendor/src/lib/openjp2/t1.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/t2.o" "-c" "vendor/src/lib/openjp2/t2.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/tcd.o" "-c" "vendor/src/lib/openjp2/tcd.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/tgt.o" "-c" "vendor/src/lib/openjp2/tgt.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/function_list.o" "-c" "vendor/src/lib/openjp2/function_list.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/opj_malloc.o" "-c" "vendor/src/lib/openjp2/opj_malloc.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "vendor/src/lib/openjp2" "-I" "config" "-Wall" "-Wextra" "-DOPJ_HAVE_POSIX_MEMALIGN=1" "-DMUTEX_pthread=1" "-DOPJ_STATIC=1" "-o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/sparse_array.o" "-c" "vendor/src/lib/openjp2/sparse_array.c"
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-apple-darwin
+AR_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=AR_x86_64_apple_darwin
+AR_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+running: "ar" "cq" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/libopenjp2.a" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/thread.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/bio.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/cio.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/dwt.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/event.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/ht_dec.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/image.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/invert.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/j2k.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/jp2.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/mct.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/mqc.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/openjpeg.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/opj_clock.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/pi.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/t1.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/t2.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/tcd.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/tgt.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/function_list.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/opj_malloc.o" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/vendor/src/lib/openjp2/sparse_array.o"
+exit status: 0
+running: "ar" "s" "/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out/libopenjp2.a"
+exit status: 0
+cargo:rustc-link-lib=static=openjp2
+cargo:rustc-link-search=native=/Users/shint1001/Desktop/test-convert/target/debug/build/openjpeg-sys-3eeda523b20511ee/out

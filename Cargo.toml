@@ -1,0 +1,17 @@
+[package]
+name = "test-convert"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jp2k ="*"
+tokio = { version = "1.21", features = ["full"] }
+tokio-util = { version = "0.7", features = ["full"] }
+anyhow = "*"
+image = "0.23"
+
+gstreamer = "*"
+gstreamer-video = "*"
+gstreamer-app = "*"
